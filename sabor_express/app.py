@@ -1,7 +1,7 @@
 import os
 
 
-def exibir_nome_do_programa():
+def exibir_nome_do_programa(): #def e uma funcao 
     print('🅢 🅐 🅑 🅞 🅡 🅔 🅢 🅟 🅡 🅔 🅢 🅢\n')
 
 def mostrar_menu():
@@ -41,7 +41,7 @@ def escolher_opcao():
 def main():
     exibir_nome_do_programa()
   
-if __name__ == '__main__':
+if __name__ == '__main__': # fazendo o main principal
     main()
     mostrar_menu()
     escolher_opcao()
