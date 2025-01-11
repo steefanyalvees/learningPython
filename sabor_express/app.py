@@ -1,6 +1,7 @@
 import os
 
-restaurantes = ['Pizza', 'sushi']# lista array
+restaurantes = [{'Nome': 'ItalianPizza', 'Categoria' : 'Italiano', 'Ativo': False},
+                {'Nome': 'BurguerKing', 'Categoria': 'FastFood', 'Ativo' : True}]# lista array
 
 def exibir_nome_do_programa(): #def e uma funcao 
     print('🅢 🅐 🅑 🅞 🅡 🅔 🅢 🅟 🅡 🅔 🅢 🅢\n')
@@ -18,10 +19,12 @@ def finalizar_app():
 
 def lista_restaurantes(): 
     os.system('cls')
-    print('listando os restaurantes')
-
+    #print('listando os restaurantes')
+    
     for restaurante  in restaurantes:
-        print(f'.{restaurantes }')
+        nome_restaurante = restaurante['Nome']
+        Categoria = restaurante['Categoria']
+        print(f'{nome_restaurante} | {Categoria}')
 
     input('digite uma tecla para voltar para o main')
     main()
